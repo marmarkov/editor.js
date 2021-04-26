@@ -16,7 +16,7 @@
       right: auto;
       left: calc(var(--toolbox-buttons-size) * -1);
 
-      @media (--mobile){
+      @media (--mobile) {
         margin-left: 0;
         margin-right: auto;
         padding-right: 0;
@@ -29,13 +29,13 @@
     left: 5px;
     right: auto;
 
-    &::before{
+    &::before {
       right: auto;
       left: 25px;
     }
 
     &__button {
-      &:not(:nth-child(3n+3)) {
+      &:not(:nth-child(3n + 3)) {
         margin-left: 3px;
         margin-right: 0;
       }
@@ -61,11 +61,11 @@
       }
     }
   }
-
 }
 
 .codex-editor--narrow.codex-editor--rtl {
   .ce-toolbar__plus {
+    display: none;
     @media (--not-mobile) {
       left: 0px;
       right: 5px;
@@ -73,10 +73,9 @@
   }
 
   .ce-toolbar__actions {
+    display: none;
     @media (--not-mobile) {
       left: -5px;
     }
   }
 }
-
-
