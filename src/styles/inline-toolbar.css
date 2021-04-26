@@ -11,7 +11,7 @@
   &--showed {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
   }
 
   &--left-oriented {
@@ -49,7 +49,7 @@
   }
 
   &__dropdown {
-    display: inline-flex;
+    display: none;
     height: var(--toolbar-buttons-size);
     padding: 0 9px 0 10px;
     margin: 0 6px 0 -6px;
@@ -65,8 +65,8 @@
       display: none;
     }
 
-    &-content{
-      display: flex;
+    &-content {
+      display: none;
       font-weight: 500;
       font-size: 14px;
 
@@ -130,7 +130,7 @@
     box-sizing: border-box;
     display: none;
     font-weight: 500;
-    border-top: 1px solid rgba(201,201,204,.48);
+    border-top: 1px solid rgba(201, 201, 204, 0.48);
 
     &::placeholder {
       color: var(--grayText);
